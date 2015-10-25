@@ -1,0 +1,166 @@
+
+$primary-background: white;
+$secondary-background: #e9e9de;
+
+$button-color: #b10202;
+$button-dsbl-color: #8d0101;
+
+$focus-color: #556794;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    vertical-align: top;
+}
+
+header {
+
+    background-color: $secondary-background;
+    padding: 8px 24px;
+    font-size: 200%;
+
+    .right {
+        float: right;
+        position: relative;
+        top: 3px;
+    }
+
+}
+
+#search {
+    margin-left: 32px;
+    width: calc(100% - 600px);
+    max-width: 500px;
+}
+
+#header_search {
+    position: relative;
+    right: 10px;
+    bottom: 3px;
+    width: 32px;
+}
+
+#header_login {
+    padding: 4px 12px;
+}
+
+dialog {
+    background-color: $secondary-background;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+
+    form {
+        display: inline-block;
+        text-align: left;
+    }
+
+}
+
+#login-status {
+    font-size: 80%;
+    height: 15px;
+}
+
+#login-logout {
+    display: none;
+}
+
+#login-name {
+    font-size: 50%;
+
+}
+
+button, input {
+    padding: 4px;
+    height: 24px;
+
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+    border: 0;
+
+    position: relative;
+    bottom: 4px;
+}
+
+button {
+    color: white;
+    background-color: $button-color;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+
+button[disabled] {
+    color: #ddd;
+    background-color: $button-dsbl-color;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+}
+
+nav {
+    font-size: 120%;
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+
+    div {
+
+        input {
+            display: none;
+        }
+
+        label {
+            width: 100%;
+            float: left;
+        }
+
+    }
+
+    .icon {
+        width: 30px;
+        text-align: right;
+        padding-right: 0;
+    }
+
+    label > span {
+        padding: 8px;
+        display: inline-block;
+        line-height: 42px;
+    }
+
+    input:checked + label, label:hover {
+        background-color: $focus-color;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+main {
+    padding: 8px;
+    display: inline-block;
+    width: calc(100% - 393px);
+    margin-left: -4px;
+    vertical-align: top;
+
+    footer {
+        th {
+            text-align: right;
+        }
+    }
+}
+
+aside {
+    display: inline-block;
+    width: 180px;
+    margin-left: -4px;
+    vertical-align: top;
+    padding: 8px;
+}

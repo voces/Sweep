@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNLV</title>
+
+        <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css"/
+        href="https://saeedalipoor.github.io/icono/icono.min.css">
+        <link rel="stylesheet" href="style.min.css" type="text/css"/>
+
+        <script src="script.js"></script>
+
+        <!--<script src="sample.js"></script>-->
+    </head>
+    <body>
+
+        <header>
+            <span class="left">
+                <span><img src="sweep_tiny.png">Sweep</span>
+                <input id="search" placeholder="Search">
+                <button id="header_search">&#128270;</button>
+            </span>
+            <span class="right">
+                <button id="login-button">Sign in</button>
+                <span id="login-name"></span>
+                <button id="login-logout">Sign out</button>
+            </span>
+        </header>
+
+        <nav>
+            <div>
+                <input type="radio" name="navigation" id="home" checked>
+                <label for="home">
+                    <span class="icon">&#127968;</span><span>Home</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="navigation" id="school">
+                <label for="school">
+                    <span class="icon">&#127979;</span><span>Schools</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="navigation" id="dept">
+                <label for="dept">
+                    <span class="icon">&#127970;</span><span>Departments</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="navigation" id="course">
+                <label for="course">
+                    <span class="icon">&#127891;</span><span>Courses</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="navigation" id="class">
+                <label for="class">
+                    <span class="icon">&#127890;</span><span>Classes</span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="navigation" id="profile">
+                <label for="profile">
+                    <span class="icon">&#128511;</span><span>Profiles</span>
+                </label>
+            </div>
+        </nav>
+
+        <main>
+
+            <article>
+                <h2>Status</h2>
+                <p>
+                    This public article will contain information about the
+                    status of Sweep and will gain focus if the site is
+                    experiencing any difficulties or plans to be off for
+                    maintence.
+                </p>
+            </article>
+
+            <article>
+                <h2>Enrollment</h2>
+                <p>
+                    This public article will contain data for the next
+                    enrollment period and will gain focus when such a period
+                    nears.
+                </p>
+            </article>
+
+            <article>
+                <h2>Schedule</h2>
+                <p>
+                    This private article will contain a visual representation of
+                    this weeks calendar and will include a link for a more
+                    detailed calendar page with more options. It will gain focus
+                    if the week deviates from normal (i.e., new classes start or
+                    a scheduled holiday break nears).
+                </p>
+            </article>
+
+            <article>
+                <h2>Finances</h2>
+                <p>
+                    This private article will include information regarding a
+                    current balance. It will gain focus if there is a balance
+                    and if it is due soon.
+                </p>
+            </article>
+
+            <article>
+                <h2>Admissions</h2>
+                <p>
+                    This private article will include information regarding a
+                    current admission. It will gain focus if there is an
+                    outstanding admission and more focus if the status changes.
+                </p>
+            </article>
+
+            <footer>
+                <h2>Contact</h2>
+                <table>
+                    <tr>
+                        <th>Admissions:</td>
+                        <td>702-774-8658</td>
+                    </tr>
+                    <tr>
+                        <th>Registrar:</td>
+                        <td>702-895-3443</td>
+                    </tr>
+                    <tr>
+                        <th>IT Help Desk:</td>
+                        <td>702-895-0777</td>
+                    </tr>
+                </table>
+            </footer>
+		</main>
+
+        <aside>
+            <h3>To do</h3>
+
+            <p>This aside may be removed...</p>
+
+            <p>
+                <strong>Enrollment</strong><br/>
+                You may begin enrolling for the 2016 Spring Regular Academic session
+                on November 4, 2015.
+            </p>
+
+        </aside>
+
+        <dialog id="login-dialog">
+            <form method="dialog" id="login-form">
+                <section>
+                    <h1>Sign in with Sweep account</h1>
+                    <p><input placeholder="username" id="login-user"></p>
+                    <p>
+                        <input placeholder="password" type="password"
+                        id="login-pass">
+                    </p>
+                </section>
+                <menu>
+                    <button id="login-cancel" type="reset">Cancel</button>
+                    <button id="login-submit" type="submit">Sign in</button>
+                </menu>
+                <p id="login-status"></p>
+            </form>
+        </dialog>
+
+    </body>
+</html>
